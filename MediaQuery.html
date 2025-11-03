@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        .one{
+            background-color: blueviolet;
+        }
+        .two{
+            background-color: chocolate;
+        }
+        .three{
+            background-color: darkmagenta;
+        }
+       @media((min-width:400px)and (max-width:600px))
+        {
+            div p{
+                float: left;
+                width: 30%;
+                color: white;
+                /* padding: 5px; */
+                margin-left: 5px;
+            }
+
+
+        }
+        @media Print{
+            body{
+                font-size: 40px;
+                font-style: italic;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <p class="one">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio quo quidem, nihil rem consequatur, dicta aspernatur maxime tempore unde incidunt quas sint ad. Accusamus et, incidunt minima amet quos laborum!</p>
+
+        <p class="two">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim repudiandae rem adipisci illo quod quasi necessitatibus ut dicta molestias fugit eveniet accusamus deleniti officiis blanditiis porro temporibus tempore, ab inventore?</p>
+
+             <p class="three">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nobis, eaque quas totam vitae minus accusamus architecto eum voluptate quae quidem alias nam illo eius. Maiores soluta quaerat quibusdam vel.</p>
+    </div>
+</body>
+</html>

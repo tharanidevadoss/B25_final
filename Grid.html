@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: grid;
+            /* grid-template-columns: 40% 30% 30%; */
+            /* grid-template-columns: 500px 400px 400px; */
+            /*Fraction =->approxiamtely splits screen  */
+            grid-template-columns: 1fr 1fr 1fr;
+            /* column-gap: 20px;
+            row-gap: 20px; */
+            gap: 20px;
+        }
+        .one{
+            background-color: crimson;
+        }
+        .two{
+            background-color: cadetblue;
+        }
+        .three{
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et modi voluptate laudantium ullam blanditiis 
+        soluta reiciendis perferendis libero quod esse sed dignissimos laboriosam molestias deleniti, repellat 
+        rerum beatae eligendi voluptatibus.</p>
+         <p class="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et modi voluptate laudantium ullam blanditiis 
+        soluta reiciendis perferendis libero quod esse sed dignissimos laboriosam molestias deleniti, repellat 
+        rerum beatae eligendi voluptatibus.</p>
+         <p class="three">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et modi voluptate laudantium ullam blanditiis 
+        soluta reiciendis perferendis libero quod esse sed dignissimos laboriosam molestias deleniti, repellat 
+        rerum beatae eligendi voluptatibus.</p>
+        </div>
+</body>
+</html>

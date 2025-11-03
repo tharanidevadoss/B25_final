@@ -1,0 +1,9 @@
+body
+{background-color: aqua;}
+h2,p{
+    color:red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h2-color{
+    color:blue;
+}

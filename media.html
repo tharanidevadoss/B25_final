@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        .box{
+margin: auto;
+text-align: center;
+ background-color: rgb(185, 40, 146);
+ color: white;
+ font-size: 50px;
+ /* width: 400px   ; */
+        }
+       @media((min-width:400px) and (max-width:500px))
+       {
+           .box1{
+            background-color: blue;
+            display: block;
+           }
+       }
+       @media((min-width:500px) and (max-width:600px))
+       {
+           .box2{
+            background-color: rgb(0, 255, 55);
+            display: block;
+           }
+       }
+       @media((min-width:600px) and (max-width:700px))
+       {
+           .box3{
+            background-color: rgb(255, 242, 0);
+            display: block;
+           }
+       }
+    </style>
+</head>
+<body>
+    <div class="box box1">Windows</div>
+    <div class="box box2">MAcOS</div>
+    <div class="box box3">Linux</div>
+    <div class="box box4">Android</div>
+    <div class="box box5">IOS</div>
+</body>
+</html>

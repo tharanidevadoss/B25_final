@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        .layout{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-areas: "h h h h h" "sb1 mc mc mc sb2" "f f f f f";
+            grid-template-rows: 10vh 80vh 10vh;
+        }
+        .layout div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header{
+            grid-area: h;
+            background-color: aqua;
+        }
+        .sidebar1{
+            grid-area: sb1;
+            background-color: crimson;
+        }
+        .maincontent{
+            grid-area: mc;
+            background-color: chartreuse;
+        }
+        .sidebar2{
+            grid-area: sb2;
+            background-color: blueviolet;
+        }
+        .footer{
+            grid-area: f;
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="header">Header</div>
+        <div class="sidebar1">Sidebar1</div>
+        <div class="maincontent">main content</div>
+        <div class="sidebar2">sidebar2</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
